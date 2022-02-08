@@ -1,0 +1,19 @@
+.goal-item-container {
+	display: grid;
+	background-color: rgba(0, 255, 255, 0.294);
+	grid-template-columns: 60px auto 148px;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 700;
+	color: #ffffff;
+	column-gap: 20px;
+}
+
+.goal-item {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.h-full {
+	height: 100%;
+}

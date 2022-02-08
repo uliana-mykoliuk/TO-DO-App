@@ -1,0 +1,28 @@
+.btn {
+	border: none;
+	padding: 20px;
+	height: 60px;
+	color: #fff;
+	font-size: 18px;
+	transition: background-color 0.3s ease;
+}
+
+.remove {
+	background-color: #35383d;
+}
+
+.remove:hover,
+.remove:focus {
+	background-color: rgba(0, 255, 255, 0.294);
+	transition: background-color 0.3s ease;
+}
+
+.add {
+	background-color: rgba(0, 255, 255, 0.294);
+}
+
+.add:hover,
+.add:focus {
+	background-color: rgba(0, 255, 255, 0.541);
+	transition: background-color 0.3s ease;
+}

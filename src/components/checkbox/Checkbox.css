@@ -1,0 +1,21 @@
+input[type="checkbox"] {
+	display: none;
+}
+
+.checkbox {
+	width: 60px;
+	height: 60px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	background-position: center center;
+	cursor: pointer;
+}
+
+.checkbox-checked {
+	background-image: url(../../assets/checkbox-icons/checked-checkbox.svg);
+}
+
+.checkbox-disabled {
+	background-image: url(../../assets/checkbox-icons/disabled-checkbox.svg);
+}
