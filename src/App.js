@@ -10,21 +10,22 @@ function App() {
 	if (!localStorage.getItem("goals")) {
 		localStorage.setItem("goals", JSON.stringify([]));
 	}
-	let goals = JSON.parse(localStorage.getItem("goals"));
+	const [goals, setGoals] = useState(JSON.parse(localStorage.getItem("goals")));
 	const [goalItems, setGoalItems] = useState(goals || []);
 	const inputRef = useRef();
 
 	const addItem = () => {
 		if (inputRef.current.value) {
 			setGoalItems([...goalItems, inputRef.current.value]);
+			localStorage.setItem("goals", JSON.stringify(goalItems));
 			inputRef.current.value = "";
 		}
 	};
 
 	useEffect(() => {
 		localStorage.setItem("goals", JSON.stringify(goalItems));
-		goals = JSON.parse(localStorage.getItem("goals"));
-	}, [goalItems]);
+		setGoals(goalItems);
+	}, [goalItems, goals]);
 
 	return (
 		<div>
